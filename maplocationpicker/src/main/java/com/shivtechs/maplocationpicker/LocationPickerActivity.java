@@ -310,6 +310,7 @@ public class LocationPickerActivity extends AppCompatActivity implements OnMapRe
                 userAddress = place.getAddress();
               //  addressdetails=place.getAddressComponents();
                 imgSearch.setText("" + userAddress);
+                //addressline2.setText(userAddress);
                 mLatitude = place.getLatLng().latitude;
                 mLongitude = place.getLatLng().longitude;
                 place_id = place.getId();
@@ -451,7 +452,7 @@ public class LocationPickerActivity extends AppCompatActivity implements OnMapRe
         }catch (Exception ex){ Log.d(TAG,"address error "+ex);}
 
         try {
-            addressline2.setText(userAddressline2);
+            addressline2.setText(userAddress);
             citydetail.setText(userCity+SPACE+userPostalCode+SPACE+userState+SPACE+userCountry);
 
         }catch (Exception ex){ ex.printStackTrace();}
