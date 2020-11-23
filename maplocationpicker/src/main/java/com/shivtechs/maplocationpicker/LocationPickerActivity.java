@@ -722,7 +722,7 @@ public class LocationPickerActivity extends AppCompatActivity implements OnMapRe
 
                     String address = addresses.get(0).getAddressLine(0);
                     if (address != null)
-                        addressBundle.putString("addressline2",addresses);
+                        addressBundle.putString("addressline2",address);
                         sb.append(address).append(" ");
 
 
