@@ -247,6 +247,7 @@ public class LocationPickerActivity extends AppCompatActivity implements OnMapRe
                 intent.putExtra(MapUtility.LATITUDE, mLatitude);
                 intent.putExtra(MapUtility.LONGITUDE, mLongitude);
                 intent.putExtra("fullAddress",addressBundle);
+                intent.putExtra("editAddress",addressline2.getText().toString());
                 intent.putExtra("id", place_id);//if you want place id
                 intent.putExtra("url", place_url);//if you want place url
                 LocationPickerActivity.this.setResult(Activity.RESULT_OK, intent);
